@@ -4,13 +4,13 @@ import com.sap.conn.jco.JCoDestination;
 import com.sap.conn.jco.JCoDestinationManager;
 import com.sap.conn.jco.JCoException;
 import com.sap.conn.jco.ext.DestinationDataProvider;
-
+import com.roinma.*;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Properties;
-
 /**
- * Created by gang.xu01@hand-china.com on 2018/12/4
+ * Created by roin.zhou on 2021/11/23
+ * 连接SAP RFC 并且设置传参和读取返回表
  */
 public class SAPConnUtils {
 

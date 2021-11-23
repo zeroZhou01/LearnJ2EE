@@ -1,7 +1,8 @@
 package com.roinma;
 
 /**
- * Created by gang.xu01@hand-china.com on 2018/12/6
+ * Created by roin.zhou on 2021/11/23
+ * 连接SAP RFC 并且设置传参和读取返回表
  */
 public class SapConn {
 
