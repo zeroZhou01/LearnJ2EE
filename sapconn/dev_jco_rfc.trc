@@ -1,0 +1,128 @@
+
+**** Error file opened at 20211122 212936 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:29:36,206<    RfcException:
+	message: Parameter logon language ('lang') code 'abc' is invalid
+	return code: RFC_INVALID_PARAMETER (19)
+	error group: 101
+	key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.setProperties(RfcOptions.java:539)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.initialize(MiddlewareJavaRfc.java:1315)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1346)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:704)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:115)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:349)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:46)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:323)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:974)
+	at com.sap.conn.jco.rt.RfcDestination.ping(RfcDestination.java:1409)
+	at com.roinma.SAPConnUtils.connect(SAPConnUtils.java:77)
+	at com.roinma.Main.main(Main.java:20)
+
+
+
+**** Error file opened at 20211122 212952 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:29:52,238<    RfcException:
+	message: Parameter ABAP system number ('sysnr') needs to be a two digit number string instead of '001'
+	return code: RFC_INVALID_PARAMETER (19)
+	error group: 101
+	key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkSystemNumber(RfcOptions.java:452)
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:280)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.initialize(MiddlewareJavaRfc.java:1316)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1346)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:704)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:115)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:349)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:46)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:323)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:974)
+	at com.sap.conn.jco.rt.RfcDestination.ping(RfcDestination.java:1409)
+	at com.roinma.SAPConnUtils.connect(SAPConnUtils.java:77)
+	at com.roinma.Main.main(Main.java:20)
+
+
+
+**** Error file opened at 20211122 213007 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:30:07,374<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.8.13.152 SYSNR=01 SAPROUTER=123456 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       hostname '123456/H/10.8.13.152' unknown
+TIME        Mon Nov 22 21:30:07 2021
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: '123456/H/10.8.13.152' not found
+SYSTEM CALL getaddrinfo
+COUNTER     3
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20211122 213046 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:30:46,555<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.8.13.152 SYSNR=01 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.8.13.152:3301' not reached
+TIME        Mon Nov 22 21:30:46 2021
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.8.13.152:3301
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20211122 213132 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:31:32,989<    RfcException:
+	message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITH_POOL ASHOST=10.8.13.152 SYSNR=01 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '10.8.13.152:3301' not reached
+TIME        Mon Nov 22 21:31:32 2021
+RELEASE     721
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3289
+DETAIL      NiPConnect2: 10.8.13.152:3301
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+	return code: RFC_FAILURE (1)
+	error group: 102
+	key: RFC_ERROR_COMMUNICATION
+
+
+**** Error file opened at 20211122 215035 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:50:35,952<    >RfcGetException rc (7) message: Function module "Z_TEST_001" cannot be used for 'remote' calls.
+<RfcGetException
+
+
+
+**** Error file opened at 20211122 215040 China Standard Time Rel. 3.0.17 (2017-07-17) [721.913]
+Error:  >Mon Nov 22 21:50:40,910<    >RfcGetException rc (7) message: Function module "Z_TEST_001" cannot be used for 'remote' calls.
+<RfcGetException
+
+
